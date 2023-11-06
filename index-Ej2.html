@@ -1,0 +1,46 @@
+<!--
+     Realizado por :
+                      Agüero, Gerson
+                      Assefh, Emilio Nicolás
+                      Gomez Pacheco, Pamela
+                      Ramallal, Mario
+                      
+    
+    Ejercicio 2
+    Desarrollador una calculadora que tenga:
+    ● 2 campos inputs para los operandos
+    ● 4 botones de operadores básicos (suma, resta, multiplicación, división)
+    Al realizar la cuenta se deberá actualizar el campo resultado -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style-Ej2.css">
+</head>
+<body>
+
+    <h1>Calculadora - Grupo G </h1>
+    <div class="calculator">
+        <input type="text" id="op1">
+        <input type="text" id="op2">
+        <div>
+            <button onclick="sumar()"> + </button>
+            <button onclick="restar()"> - </button>
+            <button onclick="multiplicar()"> * </button>
+            <button onclick="dividir()"> / </button>
+            
+       </div>
+        <input type="text" id="pantalla" readonly>
+        <div>
+            <button id="botonC" onclick="limpiarCampos() "> C </button>
+        </div>
+    </div>
+    <script src="script-Ej2.js"></script>
+
+</body>
+</html>
